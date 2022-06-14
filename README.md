@@ -1,4 +1,9 @@
 # Lab11Web
+
+Nama    : Alif Fahmi
+NIM     : 31201007
+Kelas   : TI 20 B2
+
 Latihan_11 1-6-2022
 
 ## Praktikum 11: PHP Framework (Codeigniter)
@@ -122,3 +127,106 @@ saat kita membuka halaman artikel dan kontak maka tampilan akan menuju page arti
 ![ss 1](img/ss10-5.png)
 
 ![ss 1](img/ss10-6.png)
+
+========================================================
+## Praktikum 12: Framework Lanjutan (CRUD)
+
+### Jalankan MySQL pada program XAMPP berjalan dan buat database seperti berikut :
+
+![ss 1](img/ss11-1.PNG)
+
+### Mengkonfigurasi koneksi database pada file .env seperti berikut :
+
+![ss 1](img/ss11-2.PNG)
+
+### Membuat file Model pada direktori app/Models dengan nama ArtikelModel.php seperti berikut :
+
+![ss 1](img/ss11-3.PNG)
+
+### Membuat file Controller baru dengan nama Artikel.php pada direktori app/Controllers. seperti berikut :
+
+![ss 1](img/ss11-4.PNG)
+
+### Membuat file Views baru dengan nama artikel pada direktori app/views, kemudian buat filebaru dengan nama index.php, seperti berikut 
+
+![ss 1](img/ss12-1.PNG)
+
+Jalankan server dan akses link : http://localhost:8080/artikel
+
+![ss 1](img/ss12-2.PNG)
+
+### Masukan data berikut pada database :
+
+![ss 1](img/ss12-3.PNG)
+
+Refresh dan lihat kembali browser :
+
+![ss 1](img/ss12-4.PNG)
+
+### Menambahkan Detail pada Artikel.php seperti berikut :
+
+![ss 1](img/ss13.PNG)
+
+### Membuat file baru baru untuk halaman detail dengan nama app/views/artikel/detail.php. seperti berikut :
+
+![ss 1](img/ss13-1.PNG)
+
+### Tambahkan rute baru pada Routes.php :
+
+![ss 1](img/ss13-2.PNG)
+
+Tampilan Artikel setelah di Klik :
+
+![ss 1](img/ss13-3.PNG)
+
+### Membuat Menu Admin
+
+Buat method baru pada Controller Artikel dengan nama admin_index() :
+
+![ss 1](img/ss14-1.PNG)
+
+Buat file baru dengan nama admin_index.php pada folder artikel :
+
+![ss 1](img/ss14-2.PNG)
+
+Tambahkan Routing baru pada Routes.php seperti berikut :
+
+![ss 1](img/ss14-3.PNG)
+
+Akses menu admin dengan url http://localhost:8080/admin/artikel :
+
+![ss 1](img/ss14-4.PNG)
+
+### Menambah Data Artikel
+
+Tambahkan fungsi/method baru pada Controller Artikel dengan nama add() :
+
+![ss 1](img/ss15-1.PNG)
+
+Lalu buat file baru dengan nama form_add.php pada folder artikel :
+
+![ss 1](img/ss15-2.PNG)
+
+tampilan saat klik artikel :
+
+![ss 1](img/ss15-3.PNG)
+
+### Mengubah DAta Artikel
+
+Tambahkan fungsi/method baru pada Controller Artikel dengan nama edit() :
+
+![ss 1](img/ss16-1.PNG)
+
+Lalu buat file baru dengan nama edit_add.php pada folder artikel :
+
+![ss 1](img/ss16-2.PNG)
+
+Tampilan saat mengubah artikel :
+
+![ss 1](img/ss16-3.PNG)
+
+### Menghapus Data
+
+Tambahkan fungsi/method baru pada Controller Artikel dengan nama delete() :
+
+![ss 1](img/ss17-1.PNG)
