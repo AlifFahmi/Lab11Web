@@ -1,8 +1,10 @@
 # Lab11Web
 
-Nama    : Alif Fahmi
-NIM     : 31201007
-Kelas   : TI 20 B2
+#### Nama    : Alif Fahmi
+
+#### NIM     : 31201007
+
+#### Kelas   : TI 20 B2
 
 Latihan_11 1-6-2022
 
