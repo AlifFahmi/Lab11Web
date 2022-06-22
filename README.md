@@ -130,7 +130,7 @@ saat kita membuka halaman artikel dan kontak maka tampilan akan menuju page arti
 
 ![ss 1](img/ss10-6.png)
 
-========================================================
+================================================================================================================================================
 ## Praktikum 12: Framework Lanjutan (CRUD)
 
 ### Jalankan MySQL pada program XAMPP berjalan dan buat database seperti berikut :
@@ -232,3 +232,68 @@ Tampilan saat mengubah artikel :
 Tambahkan fungsi/method baru pada Controller Artikel dengan nama delete() :
 
 ![ss 1](img/ss17-1.PNG)
+
+=============================================================================================================================
+
+## Praktikum 13: Framework Lanjutan (Modul Login)
+
+### Membuat Tabel: User Login
+
+![ss 1](img/ss18-1.PNG)
+
+### Membuat Model User
+Selanjutnya adalah membuat Model untuk memproses data Login. Buat file baru pada direktori app/Models dengan nama UserModel.php
+
+![ss 1](img/ss19-1.PNG)
+
+### Membuat Controller User
+Buat Controller baru dengan nama User.php pada direktori app/Controllers. kemudian tambahkan fungsi index() sebagai berikut :
+
+![ss 1](img/ss19-2.PNG)
+
+![ss 1](img/ss19-3.PNG)
+
+### Membuat View Login
+Buat direktori baru dengan nama user pada direktori app/views, kemudian buat file baru dengan nama login.php. Dengan kode berikut 
+
+![ss 1](img/ss19-4.PNG)
+
+### Membuat Database Seeder
+Buka CLI dan masukan kode "php spark make:seeder UserSeeder", Hasilnya :
+
+![ss 1](img/ss20-1.PNG)
+
+Lalu buka file UserSeeder.php yang berada di lokasi direktori /app/Database/Seeds/UserSeeder.php kemudian isi dengan kode berikut
+
+![ss 1](img/ss20-2.PNG)
+
+Selanjutnya buka kembali CLI dan ketik perintah "php spark db:seed UserSeeder" , Hasilnya :
+
+![ss 1](img/ss20-3.PNG)
+
+Hasilnya
+
+![ss 1](img/ss20-4.PNG)
+
+### Menambahkan Auth Filter
+Selanjutnya membuat filer untuk halaman admin. Buat file baru dengan nama Auth.php pada direktori app/Filters. berikut :
+
+![ss 1](img/ss21-1.PNG)
+
+Selanjutnya buka file app/Config/Filters.php tambahkan kode berikut:
+
+![ss 1](img/ss21-2.PNG)
+
+Selanjutnya buka file app/Config/Routes.php dan sesuaikan kode berikut :
+
+![ss 1](img/ss21-3.PNG)
+
+### Percobaan menu akses LOGIN
+Buka url dengan alamat http://localhost:8080/admin/artikel ketika alamat tersebut diakses maka akan ditarik ke halaman login berikut :
+
+![ss 1](img/ss21-4.PNG)
+
+### Membuat Fungsi LOGOUT
+Tambahkan method logout pada Controller User seperti berikut :
+
+![ss 1](img/ss22.PNG)
