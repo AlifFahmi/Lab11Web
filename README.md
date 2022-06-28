@@ -233,7 +233,7 @@ Tambahkan fungsi/method baru pada Controller Artikel dengan nama delete() :
 
 ![ss 1](img/ss17-1.PNG)
 
-=============================================================================================================================
+=================================================================================
 
 ## Praktikum 13: Framework Lanjutan (Modul Login)
 
@@ -297,3 +297,51 @@ Buka url dengan alamat http://localhost:8080/admin/artikel ketika alamat tersebu
 Tambahkan method logout pada Controller User seperti berikut :
 
 ![ss 1](img/ss22.PNG)
+
+
+=================================================================================
+
+## Praktikum 14: Pagination dan Pencarian
+
+### Membuat Pagination
+Untuk membuat pagination, buka Kembali Controller Artikel, kemudian modifikasi kode pada method admin_index seperti berikut
+
+![ss 1](img/ss23-1.PNG)
+
+Kemudian buka file views/artikel/admin_index.php dan tambahkan kode berikut dibawah deklarasi tabel data
+
+![ss 1](img/ss23-2.PNG)
+
+Selanjutnya buka kembali menu daftar artikel, tambahkan data lagi untuk melihat hasilnya.
+
+![ss 1](img/ss23-3.PNG)
+
+### Membuat Pencarian
+Untuk membuat pencarian data, buka kembali Controller Artikel, pada method admin_index ubah kodenya seperti berikut
+
+![ss 1](img/ss24-1.PNG)
+
+Kemudian buka kembali file views/artikel/admin_index.php dan tambahkan form pencarian sebelum deklarasi tabel seperti berikut
+
+![ss 1](img/ss24-2.PNG)
+
+Dan pada link pager ubah seperti berikut
+
+![ss 1](img/ss24-3.PNG)
+
+Selanjutnya ujicoba dengan membuka kembali halaman admin artikel, masukkan kata kunci tertentu pada form pencarian.
+
+![ss 1](img/ss24-4.PNG)
+
+### Upload Gambar
+Menambahkan fungsi unggah gambar pada tambah artikel. Buka kembali Controller Artikel, sesuaikan kode pada method add seperti berikut
+
+![ss 1](img/ss25-1.PNG)
+
+Kemudian pada file views/artikel/form_add.php tambahkan field input file dan sesuaikan tag form dengan menambahkan ecrypt type seperti berikut
+
+![ss 1](img/ss25-2.PNG)
+
+Ujicoba file upload dengan mengakses menu tambah artikel.
+
+![ss 1](img/ss25-3.PNG)
